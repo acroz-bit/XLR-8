@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Satellite Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Satellite Tracker</h1>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search satellite">
+      <select id="sort">
+        <option value="alt">Sort by Altitude</option>
+        <option value="lat">Sort by Latitude</option>
+      </select>
+    </div>
+
+    <div id="map"></div>
+    <div id="list"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

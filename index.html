@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Satellite Tracker</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoCap - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CryptoCap</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="converter.html">Converter</a>
+        </div>
+      </nav>
+    </header>
 
-  <div class="container">
-    <h1>Satellite Tracker</h1>
+    <main class="container">
+      <section class="page-title">
+        <p class="small-heading">crypto tracker</p>
+        <h1>Track popular cryptocurrencies</h1>
+        <p>
+          Search coins, sort market data, open coin details, and save your
+          favorite coins in a local watchlist.
+        </p>
+      </section>
 
-    <div class="controls">
-      <input type="text" id="search" placeholder="Search satellite">
-      <select id="sort">
-        <option value="alt">Sort by Altitude</option>
-        <option value="lat">Sort by Latitude</option>
-      </select>
-    </div>
+      <section class="tools-card">
+        <div class="form-group">
+          <label for="searchInput">Search by name or symbol</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Example: bitcoin or btc"
+          />
+        </div>
 
-    <div id="map"></div>
-    <div id="list"></div>
-  </div>
+        <div class="form-group">
+          <label for="sortSelect">Sort coins</label>
+          <select id="sortSelect">
+            <option value="market_cap_desc">Market cap: high to low</option>
+            <option value="price_desc">Price: high to low</option>
+            <option value="price_asc">Price: low to high</option>
+            <option value="change_desc">24h change: high to low</option>
+            <option value="change_asc">24h change: low to high</option>
+          </select>
+        </div>
+      </section>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="script.js"></script>
-</body>
+      <p id="statusMessage" class="status-message">Loading coins...</p>
+
+      <section id="coinList" class="coin-grid" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

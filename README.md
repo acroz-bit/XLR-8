@@ -1,17 +1,14 @@
-🛰️ Satellite Tracker
+📊 Cryptocurrency Tracker
 
-A web-based application that tracks real-time satellites on a world map using API data. It allows users to search, sort, and visualize satellites dynamically.
+A simple and powerful web application to track real-time cryptocurrency prices, market trends, and portfolio performance.
 
 🚀 Features
-🌍 Interactive world map using Leaflet
-🔍 Search satellites by name or ID
-🔃 Sort satellites by altitude or latitude
-📡 Real-time satellite data using API
-📊 Clean UI with satellite cards
-⚡ Efficient data handling using JavaScript HOFs (filter, sort, forEach)
-🧠 Tech Stack
-HTML
-CSS
-JavaScript
-Leaflet (for maps)
-Aviation Edge API (satellite data)
+🔴 Live cryptocurrency price updates
+📈 Market trends and charts
+💼 Portfolio tracking
+🔍 Search and filter coins
+🌐 Responsive design for all devices
+⚡ Fast and lightweight
+🛠️ Tech Stack
+Frontend: HTML, CSS, JavaScript 
+API: CoinGecko 

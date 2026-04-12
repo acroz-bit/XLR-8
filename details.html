@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoCap - Coin Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CryptoCap</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="converter.html">Converter</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <p class="small-heading">Coin details</p>
+        <h1>Cryptocurrency profile</h1>
+        <p>View price, market data, daily high and low, and a short summary.</p>
+      </section>
+
+      <p id="statusMessage" class="status-message">Loading coin details...</p>
+      <section id="detailsBox" aria-live="polite"></section>
+    </main>
+
+    <script src="details.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoCap - Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">CryptoCap</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="converter.html">Converter</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <p class="small-heading">Quick conversion</p>
+        <h1>Crypto to currency converter</h1>
+        <p>
+          Choose a coin, enter an amount, select a currency, and calculate the
+          estimated value.
+        </p>
+      </section>
+
+      <section class="converter-card">
+        <div class="converter-form">
+          <div class="form-group">
+            <label for="coinSelect">Cryptocurrency</label>
+            <select id="coinSelect"></select>
+          </div>
+
+          <div class="form-group">
+            <label for="amountInput">Amount</label>
+            <input type="number" id="amountInput" min="0" value="1" />
+          </div>
+
+          <div class="form-group">
+            <label for="currencySelect">Currency</label>
+            <select id="currencySelect">
+              <option value="usd">USD</option>
+              <option value="inr">INR</option>
+              <option value="eur">EUR</option>
+              <option value="gbp">GBP</option>
+            </select>
+          </div>
+
+          <button id="convertButton" class="btn">Convert</button>
+        </div>
+
+        <div id="resultBox" class="result-box">Loading coin prices...</div>
+      </section>
+    </main>
+
+    <script src="converter.js"></script>
+  </body>
+</html>
